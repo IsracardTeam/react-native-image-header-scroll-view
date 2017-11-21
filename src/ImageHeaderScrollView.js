@@ -75,14 +75,7 @@ class ImageHeaderScrollView extends Component<Props, State> {
    * Expose `ScrollView` API so this component is composable
    * with any component that expects a `ScrollView`.
    */
- scrollToTab = (top) => {
-        if (top && this.refs.scrollViewRef)
-            this.refs.scrollViewRef.scrollTo({
-                x: 0,
-                y: top + 35,
-                animated: true
-            });
-    };
+
 
   getScrollResponder() {
     if (!this.scrollViewRef) {
