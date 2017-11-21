@@ -241,7 +241,7 @@ class ImageHeaderScrollView extends Component<Props, State> {
         {this.renderHeader()}
         <Animated.View style={[styles.container, { transform: [{ translateY: topMargin }] }]}>
           <ScrollView
-            ref={ref => (this.scrollViewRef = ref)}
+            ref={ref => (this.scrollViewRef = ref = this.props.scrollViewRef)}
             style={styles.container}
             scrollEventThrottle={16}
             onScroll={
