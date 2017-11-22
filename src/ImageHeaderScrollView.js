@@ -104,6 +104,7 @@ class ImageHeaderScrollView extends Component<Props, State> {
     this.scrollViewRef.setNativeProps(props);
   }
   scrollTo(...args: *) {
+    console.log('scrollTo from -', args);
     const responder = this.getScrollResponder();
     if (!responder) {
       return;
